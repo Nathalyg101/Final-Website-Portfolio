@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Nathaly Design Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="css/my-styles.css">
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    </head>
+    <body class="second-banner">
+
+        <header class="w3-container row-color-1">
+            <h1 class="w3-center w3-animate-top logo-nd"><b class="header-h1">Nathaly Design</b></h1>
+            <nav>
+                <ul class="w3-center w3-animate-top">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <p id="date"></p>
+
+                <!-- javascript below -->
+                <script>
+                    var d=new Date();
+                    document.getElementById("date").innerHTML=d;
+                </script>
+            </nav>
+        </header>
+        
+        <div>   
+    
+            <section class="w3-container w3-center second-banner sec-banner-text">
+
+                <div class="w3-container w3-center second-banner sec-banner-text">
+                    <h3 class="sec-banner-text">
+                    Welcome to my creative space, where I showcase some of my best work and the process behind them ☻</h3>
+                </div>
+                <p class="sec-banner-text">
+                    Hi, I'm Nathaly! I'm a creative who focuses on <i class="sec-banner-text">Branding</i>, <i class="sec-banner-text">Packaging</i>, 
+                    <i class="sec-banner-text">advertising</i>, <i class="sec-banner-text">and Illustration</i>. I 
+                    love learning on the go and open to new experiences. You can learn more about me and my work here, <br>as well as download my resume 
+                    if you're interested in my skills and experience. If you enjoy what you see <b class="resume-text-heads">Contact Me!</b> Let's collaborate together and make history. 
+                    View all of my most recent and best work!</p>
+                <br>
+            </section>
+
+            <section class="w3-row-padding row-color-1">
+                <h2 class="w3-center"><b class="resume-text-heads">Works</b></h2>
+
+                <article class="w3-col s12 m4 l4">
+                    <h4> <a href="work.html"><b>Dragon Vector Art</b></a></h4>
+                
+                    <!-- Trigger the Modal -->
+                    <img id="myImg3" src="assets/24_Dragon-300dpi.jpg" alt="Dragon" style="width:100%;">
+
+                    <!-- The Modal -->
+                    <div id="myModal3" class="modal">
+
+                    <!-- The Close Button -->
+                    <span class="close">&times;</span>
+
+                    <!-- Modal Content (The Image) -->
+                    <img class="modal-content" id="img03" alt="Dragon vector">
+
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption3"></div>
+                    </div>
+                    
+
+                    <p class="w3-center"><b>Dec 23'</b><br>
+                    Personal Insta Work</p>
+                </article>
+
+                <article class="w3-col s12 m4 l4">
+                    <h4><a href="work.html"><b>YOASOBI Vinyl Cover Design</b></a></h4>
+                
+                    <!-- Trigger the Modal -->
+                    <img id="myImg2" src="assets/Vinyl_Finals-300dpi.jpg" alt="Vinyl" style="width:100%;">
+
+                    <!-- The Modal -->
+                    <div id="myModal2" class="modal">
+
+                    <!-- The Close Button -->
+                    <span class="close">&times;</span>
+
+                    <!-- Modal Content (The Image) -->
+                    <img class="modal-content" id="img02" alt="Vinyl Design">
+
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption2"></div>
+                    </div>
+                    
+
+                    <p class="w3-center"><b>Sept 23'</b><br>
+                    NYCCT COMD 2300</p>
+                </article>
+
+                <article class="w3-col s12 m4 l4">
+                    <h4> <a href="work.html"><b>WWF Campaign</b></a></h4>
+                
+                    <!-- Trigger the Modal -->
+                    <img id="myImg" src="assets/WWF_Final-300dpi.jpg" alt="WWF Campaign" style="width:100%;">
+
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+
+                    <!-- The Close Button -->
+                    <span class="close">&times;</span>
+
+                    <!-- Modal Content (The Image) -->
+                    <img class="modal-content" id="img01" alt="WWF">
+
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption1"></div>
+                    </div>
+                    
+
+                    <p class="w3-center"><b>Nov 23'</b><br>
+                    NYCCT COMD 2300</p>
+                </article>
+
+            </section>
+                
+            <div class="w3-container second-banner">
+                <p class="sec-banner-text w3-center"></p>
+            </div>
+
+            <footer class="w3-center">
+                <p class="sec-banner-text">&copy; Nathaly Design Copyright 2024</p>
+            </footer>
+
+
+            <!-- javascript for images below -->
+
+            <!-- Image 1, WWF -->
+            <script>
+                // Get the modal
+                var modal = document.getElementById("myModal");
+
+                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                var img = document.getElementById("myImg");
+                var modalImg = document.getElementById("img01");
+                var captionText = document.getElementById("caption1");
+                img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+                }
+
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() {
+                modal.style.display = "none";
+                }
+            </script>
+
+            <!-- Image 2, Vinyl -->
+            <script>
+                // Get the modal
+                var modal = document.getElementById("myModal2");
+
+                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                var img = document.getElementById("myImg2");
+                var modalImg = document.getElementById("img02");
+                var captionText = document.getElementById("caption2");
+                img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+                }
+
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close2")[0];
+
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() {
+                modal.style.display = "none";
+                }
+            </script>
+
+            <!-- Image 3, Dragon -->
+            <script>
+                // Get the modal
+                var modal = document.getElementById("myModal3");
+
+                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                var img = document.getElementById("myImg3");
+                var modalImg = document.getElementById("img03");
+                var captionText = document.getElementById("caption3");
+                img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+                }
+
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close3")[0];
+
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() {
+                modal.style.display = "none";
+                }
+            </script>
+
+        </div>
+	</body>
+</html>
